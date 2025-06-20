@@ -8,7 +8,8 @@
   command = "npm run build"
   
   # This is the directory that contains the built, static assets.
-  publish = "frontend/dist"
+  # It is relative to the 'base' directory.
+  publish = "dist"
 
 # This rule is essential for single-page applications (SPAs) like yours.
 # It ensures that all paths are redirected to your index.html file,
