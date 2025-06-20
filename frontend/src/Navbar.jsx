@@ -7,7 +7,6 @@ const NavLinks = ({ mobile = false }) => (
     <NavLink to="/about" className={({ isActive }) => `font-serif text-lg transition-colors duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'}`}>About</NavLink>
     {/* Placeholder for future link */}
     <a href="#holistic" className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200">Holistic Services</a>
-    <NavLink to="/book-session" className={({ isActive }) => `font-serif text-lg transition-colors duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'}`}>Book a Session</NavLink>
     <NavLink to="/contact" className={({ isActive }) => `font-serif text-lg transition-colors duration-200 ${isActive ? 'text-primary' : 'text-secondary hover:text-primary'}`}>Contact</NavLink>
     <Link to="/book-session" className={mobile ? "w-full text-center mt-4 px-6 py-3 bg-primary text-secondary font-serif text-lg rounded-full shadow-md" : "ml-4 px-6 py-2 bg-secondary text-white font-serif text-lg rounded-full hover:bg-primary hover:text-secondary transition-all duration-200 shadow-sm hover:shadow-md"}>
       Book Now

@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from './assets/ee-logo.PNG'; // Import the logo
-import Footer from './Footer';
+import relaxationImage from './assets/accessbars-logo.png'; // Import the main image
+import zenImage from './assets/bars.webp'; // Import the secondary image
 
 const Landing = () => {
   return (
@@ -27,9 +29,12 @@ const Landing = () => {
             Discover a transformative approach to wellness with Access Bars, a gentle energy-healing modality designed to release stress, quiet the mind, and dissolve limiting beliefs. By lightly touching 32 points on your head, this process defragments the electromagnetic components of stress, thought, and emotion, creating space for new possibilities and profound relaxation. Experience the luxury of tranquility and empower your journey to recovery with our dedicated team.
           </p>
 
-          <button className="mt-8 px-8 py-3 bg-secondary text-white font-serif text-lg rounded-full hover:bg-primary hover:text-secondary transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50 self-start">
+          <Link
+            to="/about"
+            className="mt-8 px-8 py-3 bg-secondary text-white font-serif text-lg rounded-full hover:bg-primary hover:text-secondary transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50 self-start inline-block"
+          >
             Learn More &rarr;
-          </button>
+          </Link>
         </div>
 
         {/* Right Column: Images */}
@@ -39,7 +44,7 @@ const Landing = () => {
             {/* Main image container with the TALL and NARROW shape, rounded at the TOP */}
             <div className="w-full h-full rounded-t-full overflow-hidden shadow-2xl">
               <img 
-                src="./src/assets/accessbars-logo.png" 
+                src={relaxationImage} 
                 alt="Woman in a state of relaxation" 
                 className="w-full h-full object-cover"
               />
@@ -48,7 +53,7 @@ const Landing = () => {
             {/* Smaller overlapping image - Repositioned so its center aligns with the main image's corner */}
             <div className="absolute -bottom-24 -left-24 w-[200px] h-[200px]">
               <img 
-                src="./src/assets/bars.webp" 
+                src={zenImage} 
                 alt="Zen-like spa objects" 
                 className="w-full h-full object-cover rounded-full"
               />

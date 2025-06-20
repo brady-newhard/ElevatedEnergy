@@ -4,7 +4,7 @@ import './index.css';
 import Navbar from './Navbar';
 import Landing from './Landing';
 import Contact from './Contact';
-import Booking from './BookSession';
+import BookSession from './BookSession';
 import About from './About';
 import Footer from './Footer';
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/booking" element={<Booking />} />
+          <Route path="/book-session" element={<BookSession />} />
         </Routes>
       </main>
       <Footer />
