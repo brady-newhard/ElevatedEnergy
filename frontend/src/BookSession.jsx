@@ -4,7 +4,6 @@ import { DayPicker } from 'react-day-picker';
 import { format } from 'date-fns';
 import 'react-day-picker/dist/style.css';
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 // --- Sample Data: In a real app, this would come from a database ---
 const availableTimes = [
@@ -92,7 +91,6 @@ const BookSession = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
