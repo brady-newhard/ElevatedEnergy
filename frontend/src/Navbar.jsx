@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,48 +8,48 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <img
-              src="/src/assets/ee-symbol.png"
-              alt="Elevated Energy Symbol"
+              src="/src/assets/accessbars-logo.png"
+              alt="Access Bars Logo"
               className="h-12 w-auto"
             />
           </div>
           <div className="flex items-center space-x-8">
-            <a 
-              href="#home"
+            <Link 
+              to="/"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
             >
               Home
-            </a>
-            <a 
-              href="#about"
+            </Link>
+            <Link 
+              to="/about"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
             >
               About
-            </a>
-            <a 
+            </Link>
+            {/* <a 
               href="#holistic"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
             >
               Holistic Services
-            </a>
-            <a 
+            </a> */}
+            {/* <a 
               href="#book"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
             >
               Book a Session
-            </a>
-            <a 
-              href="#contact"
+            </a> */}
+            <Link 
+              to="/contact"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
             >
               Contact
-            </a>
-            <a
-              href="#book"
+            </Link>
+            <Link
+              to="/booking"
               className="ml-4 px-6 py-2 bg-secondary text-white font-serif text-lg rounded-full hover:bg-primary hover:text-secondary transition-all duration-200 shadow-sm hover:shadow-md"
             >
               Book Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
