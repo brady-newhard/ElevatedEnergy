@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { useState } from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +26,7 @@ const Contact = () => {
     <>
       <Navbar />
       <div 
-        className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-16 flex items-center justify-center" 
+        className="min-h-screen bg-cover bg-center bg-no-repeat pt-24 pb-16 flex items-center justify-center" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1528459139293-34fa35338f99?auto=format&fit=crop&q=80&w=2070')" }}
       >
         <div className="container mx-auto px-4 relative z-10">
@@ -108,7 +107,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

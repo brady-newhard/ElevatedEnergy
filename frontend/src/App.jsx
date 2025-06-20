@@ -6,19 +6,21 @@ import Landing from './Landing';
 import Contact from './Contact';
 import Booking from './BookSession';
 import About from './About';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#F3DFC5' }} className="min-h-screen w-full">
+    <div className="min-h-screen w-full flex flex-col" style={{ backgroundColor: '#F3DFC5' }}>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/booking" element={<Booking />} />
-      </Routes>
-      {/* <Footer /> */}
+      <main className="flex-grow pt-16">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element={<Booking />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

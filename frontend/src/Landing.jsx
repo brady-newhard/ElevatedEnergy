@@ -4,18 +4,18 @@ import Footer from './Footer';
 
 const Landing = () => {
   return (
-    <main className="w-full h-screen flex items-center bg-accent overflow-hidden">
-      <div className="container mx-auto grid md:grid-cols-2 items-center gap-12 px-6">
+    <main className="w-full bg-accent" style={{ height: 'calc(100vh - 160px)' }}>
+        <div className="container mx-auto grid md:grid-cols-2 items-center gap-12 px-6 h-full">
         
         {/* Left Column: Text Content */}
         <div className="text-left flex flex-col justify-center h-full py-12 md:py-0">
           <div className="flex items-center gap-4">
             <img src={logo} alt="Elevated Energy Logo" className="h-48 w-auto" />
             <div>
-              <h2 className="text-4xl font-serif text-secondary leading-tight">
+              <h2 className="text-3xl md:text-4xl font-serif text-secondary leading-tight">
                 Rise Above the Noise. Reconnect Within.
               </h2>
-              <p className="text-2xl font-serif text-primary mt-2">
+              <p className="text-xl md:text-2xl font-serif text-primary mt-2">
                 All of Life Comes to Me with Ease, Joy & Glory.®
               </p>
             </div>
@@ -33,7 +33,7 @@ const Landing = () => {
         </div>
 
         {/* Right Column: Images */}
-        <div className="relative hidden md:flex justify-center items-end h-full">
+        <div className="relative hidden md:flex justify-center items-center h-full">
           {/* Container for the image composition, aligned to the bottom */}
           <div className="relative w-[400px] h-[500px]">
             {/* Main image container with the TALL and NARROW shape, rounded at the TOP */}

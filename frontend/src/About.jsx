@@ -1,13 +1,12 @@
 //  @ts-nocheck
 import React from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-accent pt-32 pb-16">
+      <div className="bg-accent pt-24 pb-16">
         <div className="container mx-auto px-6">
           
           {/* --- Practitioner Section --- */}
@@ -33,7 +32,7 @@ const About = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-serif text-secondary text-center mb-12">The Art of Access Bars</h2>
             
-            {/* What It Is */}
+            {/* What It Is (Text -> Image on all screen sizes) */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <h3 className="text-3xl font-serif text-secondary mb-4">What is Access Bars?</h3>
@@ -44,15 +43,17 @@ const About = () => {
               <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1887" alt="Serene hands and water" className="rounded-2xl shadow-xl w-full h-80 object-cover"/>
             </div>
 
-            {/* Origins */}
+            {/* Origins (Image -> Text on Desktop, but Text is between images on Mobile) */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-              <img src="https://images.unsplash.com/photo-1474418397713-7e15e93be11e?auto=format&fit=crop&q=80&w=1887" alt="Flowing energy light patterns" className="rounded-2xl shadow-xl w-full h-80 object-cover"/>
-              <div>
+              {/* This text block now comes first in the code to ensure it appears after the first image on mobile */}
+              <div className="md:order-last"> 
                 <h3 className="text-3xl font-serif text-secondary mb-4">Origins and Philosophy</h3>
                 <p className="text-lg text-secondary/80 leading-relaxed">
                   Developed by Gary Douglas in the 1990s, Access Bars is the foundational tool of Access Consciousness®, a set of life-changing techniques and tools designed to empower you to know that you know. The core philosophy is not about finding answers, but about living in the question, continuously opening doors to new possibilities. It encourages you to step out of judgment and into a state of allowing, where you can receive everything the universe has to offer without limitation.
                 </p>
               </div>
+              {/* This image now comes second in the code */}
+              <img src="https://images.unsplash.com/photo-1474418397713-7e15e93be11e?auto=format&fit=crop&q=80&w=1887" alt="Flowing energy light patterns" className="rounded-2xl shadow-xl w-full h-80 object-cover"/>
             </div>
             
             {/* Benefits */}
@@ -74,7 +75,7 @@ const About = () => {
 
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

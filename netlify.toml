@@ -1,0 +1,19 @@
+# Netlify configuration file
+
+[build]
+  # This is the directory where Netlify will run the build command.
+  base = "frontend"
+  
+  # This command builds your React application.
+  command = "npm run build"
+  
+  # This is the directory that contains the built, static assets.
+  publish = "frontend/dist"
+
+# This rule is essential for single-page applications (SPAs) like yours.
+# It ensures that all paths are redirected to your index.html file,
+# allowing React Router to handle the client-side routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 

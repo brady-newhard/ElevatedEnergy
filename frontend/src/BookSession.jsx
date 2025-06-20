@@ -12,7 +12,7 @@ const availableTimes = [
 ];
 // --- End Sample Data ---
 
-const Booking = () => {
+const BookSession = () => {
   const [selectedDay, setSelectedDay] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(null);
 
@@ -30,7 +30,7 @@ const Booking = () => {
     <>
       <Navbar />
       <div 
-        className="min-h-screen bg-cover bg-center bg-no-repeat pt-32 pb-16 flex items-center justify-center" 
+        className="min-h-full bg-cover bg-center bg-no-repeat pt-24 pb-16 flex items-center justify-center" 
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1528459139293-34fa35338f99?auto=format&fit=crop&q=80&w=2070')" }}
       >
         <div className="container mx-auto px-4">
@@ -97,4 +97,4 @@ const Booking = () => {
   );
 };
 
-export default Booking;
+export default BookSession;
