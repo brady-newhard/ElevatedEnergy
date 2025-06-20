@@ -7,12 +7,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <img
-              src="/src/assets/ee-symbol.png"
-              alt="Elevated Energy Symbol"
+              src="/src/assets/ee-logo.PNG"
+              alt="Elevated Energy Logo"
               className="h-12 w-auto"
             />
           </div>
-          <div className="flex items-center space-x-8">
+          <div className="flex space-x-8">
             <a 
               href="#home"
               className="text-secondary hover:text-primary font-serif text-lg transition-colors duration-200"
@@ -56,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 
