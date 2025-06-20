@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from '/src/assets/ee-logo.PNG';
 
 const NavLinks = ({ mobile = false }) => (
   <div className={mobile ? "flex flex-col items-center space-y-6" : "flex items-center space-x-8"}>
@@ -25,7 +26,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
               <img
-                src="/src/assets/ee-logo.PNG"
+                src={logo}
                 alt="Elevated Energy Logo"
                 className="h-12 w-auto"
               />
